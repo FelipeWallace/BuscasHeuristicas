@@ -7,6 +7,8 @@ Este projeto descreve uma implementação de duas buscas heurísticas, incluindo
 
 Russell and Norvig [2010] propuseram um problema de otimização de rota que pode ser solucionado utilizando buscas heurísticas. O problema consiste em encontrar a rota mais curta entre duas cidades na Romênia, representadas por um grafo onde cada vértice é uma cidade e cada aresta tem a distância em milhas entre as cidades. Para solucionar o problema, é utilizada uma heurística que estima a distância em linha reta entre a cidade atual e a cidade de destino. Para isso, foram fornecidas informações sobre as distâncias em linha reta entre cada cidade e a cidade de Bucharest. O algoritmo de busca gulosa utiliza apenas a heurística de distância estimada em linha reta, enquanto o algoritmo A* utiliza a heurística de distância estimada em linha reta somada à distância local.
 
+![Romenia_dist](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/315054d5-8c01-4b4f-9749-e0bbaecb00ed)
+![DistBucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/a26f3ace-b316-4df7-9dbc-238ce6e00fb0)
 <!-- \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{Images/Romenia_dist.png}
@@ -41,6 +43,7 @@ A principal mudança do algoritmo A* em relação a busca gulosa é o critério 
 
 Pode-se verificar nos testes realizados que, o algoritmo A* se sobressai em cidades nas quais possuem mais de uma rota possível até \textit{Bucharest}.
 
+![Zerind-Bucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/8e7ad82b-da57-4536-b66c-ae802d156661)
 <!-- \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{Images/Zerind-Bucharest.png}
@@ -51,6 +54,7 @@ Como podemos observar na Figura \ref{fig6}, a melhor rota de \textit{Zerind} at�
 
 Entretanto, em cidades que possuem uma ou duas rotas (na qual há uma distância considerável entre elas) tanto a busca gulosa quanto a A* apresentam o mesmo resultado, como podemos observar na tabela \ref{tab2}.
 
+![Timisoara-Bucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/ff1d0668-4837-471b-a3b4-e5ca6d336f9a)
 \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{Images/Timisoara-Bucharest.png}
