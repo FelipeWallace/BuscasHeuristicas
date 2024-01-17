@@ -55,11 +55,11 @@ Como podemos observar na Figura \ref{fig6}, a melhor rota de \textit{Zerind} at�
 Entretanto, em cidades que possuem uma ou duas rotas (na qual há uma distância considerável entre elas) tanto a busca gulosa quanto a A* apresentam o mesmo resultado, como podemos observar na tabela \ref{tab2}.
 
 ![Timisoara-Bucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/ff1d0668-4837-471b-a3b4-e5ca6d336f9a)
-\begin{figure}[H]
+<!-- \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{Images/Timisoara-Bucharest.png}
 \caption{\label{fig7}Melhores rotas encontradas pelos dois algoritmos de busca a Gulosa (em azul) e A* (em vermelho) de \textit{Timisoara} até \textit{Bucharest}. Fonte: Russell and Norvig [2010] \textit{Obs:} As rotas em destaque foram confeccionadas através de um software edição.} 
-\end{figure}
+\end{figure} -->
 
 Conforme ilustrado na figura \ref{fig7}, podemos notar que ambas as buscas resultaram na mesma resposta ($615$ \textit{milhas}). Essa situação se repetiu nas cidades \textit{Neamt}, \textit{Iasi}, \textit{Vaslui} e \textit{Hirsova}, pois estas cidades apresentam um único caminho até \textit{Bucharest}.
 
