@@ -7,19 +7,13 @@ Este projeto descreve uma implementação de duas buscas heurísticas, incluindo
 
 Russell and Norvig [2010] propuseram um problema de otimização de rota que pode ser solucionado utilizando buscas heurísticas. O problema consiste em encontrar a rota mais curta entre duas cidades na Romênia, representadas por um grafo onde cada vértice é uma cidade e cada aresta tem a distância em milhas entre as cidades. Para solucionar o problema, é utilizada uma heurística que estima a distância em linha reta entre a cidade atual e a cidade de destino. Para isso, foram fornecidas informações sobre as distâncias em linha reta entre cada cidade e a cidade de Bucharest. O algoritmo de busca gulosa utiliza apenas a heurística de distância estimada em linha reta, enquanto o algoritmo A* utiliza a heurística de distância estimada em linha reta somada à distância local.
 
-![Romenia_dist](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/315054d5-8c01-4b4f-9749-e0bbaecb00ed)
-![DistBucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/a26f3ace-b316-4df7-9dbc-238ce6e00fb0)
-<!-- \begin{figure}[H]
-\centering
-\includegraphics[width=7cm]{Images/Romenia_dist.png}
-\caption{\label{fig4}Mapa simplificado de uma reigão da Romênia, com a distância rodoviárias em milhas. Fonte: Russell and Norvig [2010]} 
-\end{figure}
+<div align="center">
+   <img src="https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/315054d5-8c01-4b4f-9749-e0bbaecb00ed" style="width: 700px;">
+</div>
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=7cm]{Images/DistBucharest.png}
-\caption{\label{fig5}Lista de cidades com a distância estimada em linha reta até \textit{Bucharest}. Fonte: Russell and Norvig [2010]} 
-\end{figure} -->
+<div align="center">
+   <img src="https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/a26f3ace-b316-4df7-9dbc-238ce6e00fb0" style="width: 700px;">
+</div>
 
 ## Busca Gulosa
 
