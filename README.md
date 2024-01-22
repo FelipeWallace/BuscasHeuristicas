@@ -59,13 +59,13 @@ Conforme ilustrado na figura, podemos notar que ambas as buscas resultaram na me
 
 Com isso, podemos diz quer a busca a-estrela apresenta uma ligeira diferença em comparação com a busca gulosa, como podemos observar na tabela.
 
-| Cidade        | Busca Gulosa | Busca A* | Menor rota possível |
-|---------------|--------------|----------|----------------------|
-| Neamt         | $406         | $406     | $406                 |
-| Timisoara     | $615         | $615     | $536                 |
-| Fagaras       | $211         | $211     | $211                 |
-| Arad          | $450         | $418     | $418                 |
-| Oradea        | $461         | $429     | $429                 |
-| Zerind        | $525         | $493     | $493                 |
+| Cidade        | Busca Gulosa| Busca A*| Menor rota possível |
+|---------------|-------------|---------|---------------------|
+| Neamt         | 406         | 406     | 406                 |
+| Timisoara     | 615         | 615     | 536                 |
+| Fagaras       | 211         | 211     | 211                 |
+| Arad          | 450         | 418     | 418                 |
+| Oradea        | 461         | 429     | 429                 |
+| Zerind        | 525         | 493     | 493                 |
 
 Porém, nas abordagens utilizadas nem sempre a solução encontrada será a menor possível. Pois quando a cidade inicial é *Timisoara* as respostas das duas buscas não foram a melhor possível. Depois de realizar uma análise nas rotas a partir da cidade citada anteriormente, podemos observar que a rota ótima seria obtida indo para *Arad* ao invés de *Lugoj*, esse caminho teria um custo maior a princípio, entretando este trajeto seria mais curto até chegar a *Bucharest*, pois a distância final seria igual a 536 milhas.
