@@ -1,6 +1,6 @@
 # Implementação de buscas heurísticas
 
-Este projeto descreve uma implementação de duas buscas heurísticas, incluindo um resumo sobre o problema a ser resolvindo, uma breve descrição da Busca Gulosa e A* e quais estruturas de dados foram usadas na implementação.
+Este projeto descreve uma implementação de duas buscas heurísticas, incluindo um resumo sobre o problema a ser resolvido, uma breve descrição da Busca Gulosa e A* e quais estruturas de dados foram usadas na implementação.
 
 
 ## Problema
