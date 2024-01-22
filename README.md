@@ -59,26 +59,13 @@ Conforme ilustrado na figura \ref{fig7}, podemos notar que ambas as buscas resul
 
 Com isso, podemos diz quer a busca a-estrela apresenta uma ligeira diferença em comparação com a busca gulosa, como podemos observar na tabela \ref{tab2}.
 
-<!-- \begin{table}[H]
-\label{tab:garesults}
-\centering
-\caption{Distância em milhas obtida da melhor rota de cada busca} \label{tab2} 
-\begin{tabular}{@{}lccc@{}}
-\toprule
-\textbf{Cidade} & \textbf{Busca Gulosa} & \textbf{Busca A*} &\textbf{Menor rota possível} \\ 
-\midrule
-\textbf{Neamt}       &$406$      &$406$     &$406$\\
-\textbf{Timisoara}   &$615$      &$615$     &$536$\\
-\textbf{Fagaras}     &$211$      &$211$     &$211$\\
-\textbf{Arad}        &$450$      &$418$     &$418$\\
-\textbf{Oradea}      &$461$      &$429$     &$429$\\
-\textbf{Zerind}      &$525$      &$493$     &$493$\\
-
-\bottomrule
-\end{tabular}
-\begin{minipage}{\linewidth}
-\vspace{5pt}
-\end{minipage}
-\end{table} -->
+| Cidade        | Busca Gulosa | Busca A* | Menor rota possível |
+|---------------|--------------|----------|----------------------|
+| Neamt         | $406         | $406     | $406                 |
+| Timisoara     | $615         | $615     | $536                 |
+| Fagaras       | $211         | $211     | $211                 |
+| Arad          | $450         | $418     | $418                 |
+| Oradea        | $461         | $429     | $429                 |
+| Zerind        | $525         | $493     | $493                 |
 
 Porém, nas abordagens utilizadas nem sempre a solução encontrada será a menor possível. Pois quando a cidade inicial é \textit{Timisoara} as respostas das duas buscas não foram a melhor possível. Depois de realizar uma análise nas rotas a partir da cidade citada anteriormente, podemos observar que a rota ótima seria obtida indo para \textit{Arad} ao invés de \textit{Lugoj}, esse caminho teria um custo maior a princípio, entretando este trajeto seria mais curto até chegar a \textit{Bucharest}, pois a distância final seria igual a $536$ \textit{milhas}.
