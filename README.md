@@ -66,7 +66,6 @@ string percorrido;
 
 A principal mudança do algoritmo A* em relação a busca gulosa é o critério para escolher a próxima cidade (vértice), desta vez além da distância em linha reta para Bucharest, também é considerada a distância local (aresta) entre as cidades, desta forma a próxima cidade a ser visitada é sempre a que tiver a menor distância somada destes dois valores. Este algoritmo é capaz de gerar percursos menores, entretanto alguns cuidados devem ser tomados, por exemplo a possibilidade da melhor escolha ser uma cidade já visitada. Para corrigir isso, foi adicionado ao código uma função de busca que faz uso da lista "percorridos" onde estão listadas todas as cidades já visitadas, caso a busca retorne verdadeiro a cidade em questão será desconsiderada.
 
-<!-- \small\lstinputlisting[language=C++, firstline=8 , lastline=18,  label = Exe03, caption = Função de busca na lista de percorridos., breaklines=true, linewidth=0.45\textwidth]{Code/A_estrela.cpp}
 ```
 bool busca(list<string> lista, string item){
   list<string> aux = lista;
@@ -81,7 +80,6 @@ bool busca(list<string> lista, string item){
 }
 ```
 
-\small\lstinputlisting[language=C++, firstline=259 , lastline=286,  label = Exe03, caption = Laço principal da Busca A*., breaklines=true, linewidth=0.45\textwidth]{Code/A_estrela.cpp} -->
 ```
 string percorrido;
   int distTotal = 0, dist = 0;
