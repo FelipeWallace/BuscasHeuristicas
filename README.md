@@ -21,7 +21,7 @@ Para implementar o algoritmo de busca gulosa, em C++, foram utilizadas duas estr
 
 <!-- \small\lstinputlisting[language=C++, firstline=9 , lastline=21,  label = Exe01, caption = Estruturas e variáveis.]{Code/Busca_Gulosa.cpp} -->
 
-Para implementar o algoritmo de caminho mais curto, utilizamos o a lógica explicada na subseção *Problema*. Esse algoritmo começa pelo vértice de origem e caminha para um dos vértices adjacentes a ele, sempre considerando como refrência a distância da próxima cidade para Bucharest. Em seguida, ele armazena a cidade visitada na lista de "percorridos" e repete o processo até que a cidade de destino seja alcançada. No nosso exemplo, a cidade de origem é "Arad" e a cidade de destino é sempre "Bucharest". O algoritmo começa guardando a distância (aresta) de Arad até a cidade vizinha mais próxima de Bucharest e faz isso com todas até o final da execução, momento onde a distância percorrida pela rota será apresentada para o usuário.
+Para implementar o algoritmo de caminho mais curto, foi utilizada a lógica explicada na subseção *Problema*. Esse algoritmo começa pelo vértice de origem e caminha para um dos vértices adjacentes a ele, sempre considerando como refrência a distância da próxima cidade para Bucharest. Em seguida, ele armazena a cidade visitada na lista de "percorridos" e repete o processo até que a cidade de destino seja alcançada. No nosso exemplo, a cidade de origem é "Arad" e a cidade de destino é sempre "Bucharest". O algoritmo começa guardando a distância (aresta) de Arad até a cidade vizinha mais próxima de Bucharest e faz isso com todas até o final da execução, momento onde a distância percorrida pela rota será apresentada para o usuário.
 
 <!-- \small\lstinputlisting[language=C++, firstline=246 , lastline=268,  label = Exe02, caption = Laço principal da Busca Gulosa., breaklines=true, linewidth=0.45\textwidth]{Code/Busca_Gulosa.cpp} -->
 
@@ -37,7 +37,10 @@ A principal mudança do algoritmo A* em relação a busca gulosa é o critério 
 
 Pode-se verificar nos testes realizados que, o algoritmo A* se sobressai em cidades nas quais possuem mais de uma rota possível até *Bucharest*.
 
-![Zerind-Bucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/8e7ad82b-da57-4536-b66c-ae802d156661)
+<div align="center">
+   <img src="https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/8e7ad82b-da57-4536-b66c-ae802d156661" style="width: 700px;">
+</div>
+
 <!-- \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{Images/Zerind-Bucharest.png}
@@ -46,9 +49,11 @@ Pode-se verificar nos testes realizados que, o algoritmo A* se sobressai em cida
 
 Como podemos observar na figura, a melhor rota de *Zerind* até *Bucharest* foi obtida do algoritmo A*, que retornou uma distância de 493 milhas, contra 525 milhas da busca gulosa. A diferença na resposta se dá quando ambos algoritmos "passam" pela cidade de *Sibiu*, pois nessa cidade o algoritmo "guloso" opta por ir para *Fagaras* que está mais próximo de **Bucharest**, porém o trajeto de *Sibiu* até ela é maior, enquanto o algoritmo A* decide ir por *Rimnicu Vilcea*.
 
-Entretanto, em cidades que possuem uma ou duas rotas (na qual há uma distância considerável entre elas) tanto a busca gulosa quanto a A* apresentam o mesmo resultado, como podemos observar na tabela.
+Entretanto, em cidades que possuem uma ou duas rotas (na qual há uma distância considerável entre elas) tanto a busca gulosa quanto a A* apresentam o mesmo resultado, como poderemos observar posteriormente na tabela.
 
-![Timisoara-Bucharest](https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/ff1d0668-4837-471b-a3b4-e5ca6d336f9a)
+<div align="center">
+   <img src="https://github.com/FelipeWallace/BuscasHeuristicas/assets/97401368/ff1d0668-4837-471b-a3b4-e5ca6d336f9a" style="width: 700px;">
+</div>
 <!-- \begin{figure}[H]
 \centering
 \includegraphics[width=7cm]{Images/Timisoara-Bucharest.png}
